@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.Container{
+    width: 100vw;
+    min-height: 100vh;
+    background: #FFF8F9;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+.Container.dark{
+    background: #050001;
+}

@@ -42,8 +42,9 @@ const About = () => {
         <div className={`resumesquare`}>
           <a
             className="CV"
-            href="https://drive.google.com/file/d/10tJ6LLArQy0KEfig2nI6JXCIb8W8L7uB/view?usp=sharing"
+            href="../../../public/CV.pdf"
             target="_blank"
+            rel="noopener noreferrer"
           >
             View Resume
           </a>
@@ -299,8 +300,9 @@ const About = () => {
           </table>
           <a
             className="STEP"
-            href="https://drive.google.com/file/d/1ua6uQUy5pVo5dU-WXxgl_PUI1Y3GjXde/view?usp=sharing"
+            href="../../../public/STEP.pdf"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Click to see STEP test result
           </a>

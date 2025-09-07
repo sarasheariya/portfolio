@@ -42,7 +42,7 @@ const About = () => {
         <div className={`resumesquare`}>
           <a
             className="CV"
-            href="../../../public/CV.pdf"
+            href="https://drive.google.com/file/d/10tJ6LLArQy0KEfig2nI6JXCIb8W8L7uB/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -300,7 +300,7 @@ const About = () => {
           </table>
           <a
             className="STEP"
-            href="../../../public/STEP.pdf"
+            href="https://drive.google.com/file/d/1ua6uQUy5pVo5dU-WXxgl_PUI1Y3GjXde/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >

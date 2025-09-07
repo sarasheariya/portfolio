@@ -120,12 +120,11 @@ const About = () => {
 
       <h1 className={`Title`}>About me</h1>
       <div className={`aboutsquare`}>
-        A computer science graduate, I am looking for a job in computer science,
-        I have experience in software development, software engineering,
-        interface design, programming, I have a good background on cybersecurity
-        and networking, but I look forward to gaining more experience and adding
-        talent other than problem solving, working under pressure, and fast
-        learning that I have.
+        A computer science graduate, I have experience in software development,
+        software engineering, interface design, programming, I have a good
+        background on cybersecurity, Penetration testing, and networking, but I
+        look forward to gaining more experience and adding talent other than
+        problem solving, working under pressure, and fast learning that I have.
       </div>
 
       <h1 className={`Title`}>Skills</h1>
@@ -295,7 +294,6 @@ const About = () => {
               <tr>
                 <th>Arabic</th>
                 <th>English</th>
-                <th>Turkish</th>
               </tr>
             </tbody>
           </table>

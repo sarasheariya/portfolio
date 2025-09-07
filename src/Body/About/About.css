@@ -121,8 +121,8 @@
   .contact{
     width: 100%;
     /* float: right; */
-    padding-right: 35%;
-    padding-left: 35%;
+    padding-right: 20%;
+    padding-left: 20%;
     font-size: 20px;
     display: flex;
     flex-direction: row;
@@ -462,11 +462,13 @@
     font-family: Karma;
   }
 
+  
 
 
 
 
-@media screen and (max-width: 550px){
+
+@media screen and (max-width: 700px){
 
 
 
@@ -508,11 +510,67 @@
     padding-left: 35%;
     font-size: 15px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
   }
 
   .contactsquare{
+    font-size: 15px;
+  }
+
+
+  
+  .aboutsquare{
+    font-size: 20px;
+  }
+
+
+
+.Skillsquare {
+    font-size: 20px;
+  }
+
+  .skills{
+    font-size: 20px;
+  }
+
+  .skillimg{
+    height: 70px;
+  }
+
+  .skillname{
+    font-size: 15px;
+  }
+
+  
+.column {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.edu2{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.eduimg{
+  height: auto;
+}
+
+.eduname{
+    font-family: Karma;
+    font-size: 15px;
+    padding-top: 15%;
+    padding-left: 5%;
+}
+
+
+.expsquare {
     width: 90%;
     margin-left: 5%;
     margin-top: 2%;
@@ -521,14 +579,381 @@
     background-color: #060E0D;
     color: #ffffff;
     font-family: Karma;
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 2px;
     line-height: 1.5;
-    box-shadow: 
-    0 -5px 3px rgba(105, 190, 105, 0.183),
-    1px 0 4px rgba(199, 208, 199, 0.005),
-    -1px 0 4px rgba(199, 208, 199, 0.005);
+  }
+
+  .exp{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .expimg{
+    height: 90px;
+  }
+
+  .expname{
+    color: #ffffff;
+    font-size: 13px;
+  }
+
+
+
+  .cousquare {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+
+  .cou{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .couimg{
+    height: 70px;
+  }
+
+  .couname{
+    color: #ffffff;
+    font-size: 13px;
+  }
+
+
+
+  .languagessquare{
+    font-size: 20px;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 550px){
+
+
+
+.Title{
+  font-size: 25px;
+}
+
+
+
+.saralogo img{
+  border-radius: 50%;
+  width: 130px;
+  animation: glowAnimation 2s infinite ease-in-out;
+}
+
+
+.footer h1{
+    font-size: 15px;
+}  
+
+
+.body{
+  padding-top: 30%;
+}
+
+  .typing1{
+    font-size: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 14ch;
+    animation: typing1 2s steps(14) forwards, blink 0.7s step-end infinite;
+  }
+
+  .typing2 {
+    font-size: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #ffffff3c;
+    width: 19ch;
+    animation: typing2 2.5s steps(19) forwards, blink 0.7s step-end infinite;
+}
+
+  .contact{
+    padding-right: 20%;
+    padding-left: 20%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactsquare{
+    font-size: 15px;
+    }
+
+  
+  .aboutsquare{
+    font-size: 15px;
+  }
+
+
+
+.Skillsquare {
+    font-size: 15px;
+  }
+
+  .skills{
+    font-size: 15px;
+  }
+
+  .skillimg{
+    height: 60px;
+  }
+
+  .skillname{
+    font-size: 15px;
+  }
+
+  
+.column {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.edu2{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.eduimg{
+  height: 150px;
+}
+
+.eduname{
+    font-family: Karma;
+    font-size: 15px;
+    padding-top: 15%;
+    padding-left: 5%;
+}
+
+
+.expsquare {
+    font-size: 15px;
+  }
+
+  .exp{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .expimg{
+    height: 70px;
+  }
+
+  .expname{
+    font-size: 15px;
+  }
+
+
+
+  .cousquare {
+    font-size: 15px;
+  }
+
+  .cou{
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .couimg{
+    height: 60px;
+  }
+
+  .couname{
+    font-size: 15px;
+  }
+
+
+
+  .languagessquare{
+    font-size: 15px;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 
 
 }
+
+
+
+
+@media screen and (max-width: 400px){
+
+
+
+.Title{
+  font-size: 25px;
+}
+
+
+
+.saralogo img{
+  border-radius: 50%;
+  width: 130px;
+  animation: glowAnimation 2s infinite ease-in-out;
+}
+
+
+.footer h1{
+    font-size: 13px;
+}  
+
+
+.body{
+  padding-top: 30%;
+}
+
+  .typing1{
+    font-size: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 14ch;
+    animation: typing1 2s steps(14) forwards, blink 0.7s step-end infinite;
+  }
+
+  .typing2 {
+    font-size: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #ffffff3c;
+    width: 19ch;
+    animation: typing2 2.5s steps(19) forwards, blink 0.7s step-end infinite;
+}
+
+  .contact{
+    padding-right: 20%;
+    padding-left: 20%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactsquare{
+    font-size: 15px;
+    }
+
+  
+  .aboutsquare{
+    font-size: 15px;
+  }
+
+
+
+.Skillsquare {
+    font-size: 15px;
+  }
+
+  .skills{
+    font-size: 15px;
+  }
+
+  .skillimg{
+    height: 60px;
+  }
+
+  .skillname{
+    font-size: 15px;
+  }
+
+  
+.column {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.edu2{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.eduimg{
+  height: 150px;
+}
+
+.eduname{
+    font-family: Karma;
+    font-size: 15px;
+    padding-top: 15%;
+    padding-left: 5%;
+}
+
+
+.expsquare {
+    font-size: 15px;
+  }
+
+  .exp{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .expimg{
+    height: 70px;
+  }
+
+  .expname{
+    font-size: 15px;
+  }
+
+
+
+  .cousquare {
+    font-size: 15px;
+  }
+
+  .cou{
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .couimg{
+    height: 60px;
+  }
+
+  .couname{
+    font-size: 15px;
+  }
+
+
+
+  .languagessquare{
+    font-size: 15px;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+}
+
+
+

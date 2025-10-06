@@ -20,7 +20,7 @@ import soft2 from "../../assets/soft2.png";
 import edu from "../../assets/edu.png";
 import stc from "../../assets/stc.png";
 import efhamni from "../../assets/efhamni.png";
-import stcmisk from "../../assets/stcmisk.png";
+import bugbounty from "../../assets/bugbounty.svg";
 import cisco from "../../assets/Cisco.png";
 import gdsc from "../../assets/GDSC.png";
 import udemy from "../../assets/udemy.png";
@@ -128,6 +128,102 @@ const About = () => {
         problem solving, working under pressure, and fast learning that I have.
       </div>
 
+      <h1 className={`Title`}>Experiences</h1>
+      <div className={`expsquare`}>
+        <div className="row">
+          <div className="column">
+            <div className="exp">
+              <p className="expname">
+                <br />
+                Cooperative Training
+              </p>
+              <img src={stc} className="expimg" />
+              <p className="expname">
+                Creating Database by ( Access ), developed a web application by
+                ( HTML | CSS | PHP ) and link it with the database in the cloud.
+              </p>
+            </div>
+            <div className="exp">
+              <p className="expname">
+                <br />
+                Front-End Developer
+              </p>
+              <img src={efhamni} className="expimg" />
+              <p className="expname">
+                Developed an application by Flutter ( DART language ) for
+                autistic children to help them to communicate with other.
+              </p>
+            </div>
+            <div className="exp">
+              <p className="expname">
+                Freelancer, Penetration Testing
+              </p>
+              <img src={bugbounty} className="expimg" />
+              <p className="expname">
+                Junior Penetration Tester — Performed basic vulnerability discovery and responsible
+                disclosure on bug-bounty platforms.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1 className={`Title`}>Education</h1>
+      <div className={`edu`}>
+        <div className="edu2">
+          <div className="eduname">
+            Bachelor's degree in Computer Science
+            <br />
+            GPA : 3.85 out of 4.
+          </div>
+          <div>
+            <img className="eduimg" src={edu} />
+          </div>
+        </div>
+      </div>
+
+      <h1 className={`Title`}>Courses</h1>
+      <div className={`cousquare`}>
+        <div className="row">
+          <div className="column">
+            <div className="exp">
+              <p className="couname">Network Support and Security</p>
+              <img src={cisco} className="couimg" />
+              <p className="couname">CISCO Networking Academy</p>
+            </div>
+            <div className="exp">
+              <p className="couname">Networking Basics</p>
+              <img src={cisco} className="couimg" />
+              <p className="couname">CISCO Networking Academy</p>
+            </div>
+          </div>
+          <div className="column">
+            <div className="exp">
+              <p className="couname">AI Bootcamp</p>
+              <img src={gdsc} className="couimg" />
+              <p className="couname">GOOGLE DEVELOPER STUDENT CLUB</p>
+            </div>
+            <div className="exp">
+              <p className="couname">Introduction to Cybersecurity</p>
+              <img src={cisco} className="couimg" />
+              <p className="couname">CISCO Networking Academy</p>
+            </div>
+          </div>
+          <div className="column">
+            <div className="exp">
+              <p className="couname">Learn ethical hacking from scratch</p>
+              <img src={udemy} className="couimg" />
+              <p className="couname">Udemy</p>
+            </div>
+            <div className="exp">
+              <p className="couname">Cyber security bootcamp</p>
+              <img src={gdsc} className="couimg" />
+              <p className="couname">GOOGLE DEVELOPER STUDENT CLUB</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <h1 className={`Title`}>Skills</h1>
       <div className={`Skillsquare`}>
         <div className="row">
@@ -190,103 +286,6 @@ const About = () => {
         </div>
       </div>
 
-      <h1 className={`Title`}>Education</h1>
-      <div className={`edu`}>
-        <div className="edu2">
-          <div className="eduname">
-            Bachelor's degree in Computer Science
-            <br />
-            GPA : 3.85 out of 4.
-          </div>
-          <div>
-            <img className="eduimg" src={edu} />
-          </div>
-        </div>
-      </div>
-
-      <h1 className={`Title`}>Experiences</h1>
-      <div className={`expsquare`}>
-        <div className="row">
-          <div className="column">
-            <div className="exp">
-              <p className="expname">
-                <br />
-                Cooperative Training
-              </p>
-              <img src={stc} className="expimg" />
-              <p className="expname">
-                Creating Database by ( Access ), developed a web application by
-                ( HTML | CSS | PHP ) and link it with the database in the cloud.
-              </p>
-            </div>
-            <div className="exp">
-              <p className="expname">
-                <br />
-                Front-End Developer
-              </p>
-              <img src={efhamni} className="expimg" />
-              <p className="expname">
-                Developed an application by Flutter ( DART language ) for
-                autistic children to help them to communicate with other.
-              </p>
-            </div>
-            <div className="exp">
-              <p className="expname">
-                Cybersecurity incident response analysis
-              </p>
-              <img src={stcmisk} className="expimg" />
-              <p className="expname">
-                Dealing with security threats and issuing cyber accident
-                reports, and applying appropriate procedures to respond to cyber
-                incidents.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h1 className={`Title`}>Courses</h1>
-      <div className={`cousquare`}>
-        <div className="row">
-          <div className="column">
-            <div className="exp">
-              <p className="couname">Network Support and Security</p>
-              <img src={cisco} className="couimg" />
-              <p className="couname">CISCO Networking Academy</p>
-            </div>
-            <div className="exp">
-              <p className="couname">Networking Basics</p>
-              <img src={cisco} className="couimg" />
-              <p className="couname">CISCO Networking Academy</p>
-            </div>
-          </div>
-          <div className="column">
-            <div className="exp">
-              <p className="couname">AI Bootcamp</p>
-              <img src={gdsc} className="couimg" />
-              <p className="couname">GOOGLE DEVELOPER STUDENT CLUB</p>
-            </div>
-            <div className="exp">
-              <p className="couname">Introduction to Cybersecurity</p>
-              <img src={cisco} className="couimg" />
-              <p className="couname">CISCO Networking Academy</p>
-            </div>
-          </div>
-          <div className="column">
-            <div className="exp">
-              <p className="couname">Learn ethical hacking from scratch</p>
-              <img src={udemy} className="couimg" />
-              <p className="couname">Udemy</p>
-            </div>
-            <div className="exp">
-              <p className="couname">Cyber security bootcamp</p>
-              <img src={gdsc} className="couimg" />
-              <p className="couname">GOOGLE DEVELOPER STUDENT CLUB</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <h1 className={`Title`}>Languages</h1>
       <div className={`edu`}>
         <div className="languagessquare">
@@ -295,6 +294,7 @@ const About = () => {
               <tr>
                 <th>Arabic</th>
                 <th>English</th>
+                <th>Turkish</th>
               </tr>
             </tbody>
           </table>
@@ -311,7 +311,7 @@ const About = () => {
 
       <div className={`footer`}>
         <h1>
-          This page is made by Sara Sheariya, using Vite & React JS.
+          This page is made by Sara Sheariya, using Vite & React TS.
           <br /> Copyright &copy; Sara Sheariya
         </h1>
       </div>

@@ -42,6 +42,19 @@ const About = () => {
   };
 
 
+  const sliderRef2 = useRef<CarouselRef>(null);
+
+  const next2 = () => {
+    if (!sliderRef2.current) return;
+    sliderRef2.current.next();
+  };
+
+  const prev2 = () => {
+    if (!sliderRef2.current) return;
+    sliderRef2.current.prev();
+  };
+
+
 
 
 
@@ -210,7 +223,20 @@ const About = () => {
           <LeftOutlined className="arrow left" onClick={prev} />
           <RightOutlined className="arrow right" onClick={next} />
 
-          <Carousel ref={sliderRef} dots={false} slidesToShow={3} slidesToScroll={1}>
+          <Carousel ref={sliderRef} dots={false} slidesToShow={3} slidesToScroll={1} responsive={[
+            {
+              breakpoint: 700,
+              settings: { slidesToShow: 2 }
+            },
+            {
+              breakpoint: 550,
+              settings: { slidesToShow: 1 }
+            },
+            {
+              breakpoint: 400,
+              settings: { slidesToShow: 1 }
+            }
+          ]}>
             <div className="cou">
               <p className="couname">Network Support and Security</p>
               <img src={cisco} className="couimg" />
@@ -253,73 +279,86 @@ const About = () => {
 
       <h1 className={`Title`}>Skills</h1>
       <div className="cousquare" style={{ position: "relative" }}>
-          <LeftOutlined className="arrow left" onClick={prev} />
-          <RightOutlined className="arrow right" onClick={next} />
+        <LeftOutlined className="arrow left" onClick={prev2} />
+        <RightOutlined className="arrow right" onClick={next2} />
 
-          <Carousel ref={sliderRef} dots={false} slidesToShow={3} slidesToScroll={1}>
-            <div className="cou">
-              <img src={java} className="couimg" />
-              <p className="couname">Java</p>
-            </div>
+        <Carousel ref={sliderRef2} dots={false} slidesToShow={3} slidesToScroll={1} responsive={[
+          {
+            breakpoint: 700,
+            settings: { slidesToShow: 2 }
+          },
+          {
+            breakpoint: 550,
+            settings: { slidesToShow: 1 }
+          },
+          {
+            breakpoint: 400,
+            settings: { slidesToShow: 1 }
+          }
+        ]}>
+          <div className="cou">
+            <img src={java} className="couimg" />
+            <p className="couname">Java</p>
+          </div>
 
-            <div className="cou">
-              <img src={c} className="couimg" />
-              <p className="couname">C++</p>
-            </div>
+          <div className="cou">
+            <img src={c} className="couimg" />
+            <p className="couname">C++</p>
+          </div>
 
-            <div className="cou">
-              <img src={python} className="couimg" />
-              <p className="couname">Python</p>
-            </div>
+          <div className="cou">
+            <img src={python} className="couimg" />
+            <p className="couname">Python</p>
+          </div>
 
-            <div className="cou">
-              <img src={htmlcss} className="couimg" />
-              <p className="couname">HTML, Css</p>
-            </div>
+          <div className="cou">
+            <img src={htmlcss} className="couimg" />
+            <p className="couname">HTML, Css</p>
+          </div>
 
-            <div className="cou">
-              <img src={dart} className="couimg" />
-              <p className="couname">Dart</p>
-            </div>
+          <div className="cou">
+            <img src={dart} className="couimg" />
+            <p className="couname">Dart</p>
+          </div>
 
-            <div className="cou">
-              <img src={javascript} className="couimg" />
-              <p className="couname">JavaScript</p>
-            </div>
+          <div className="cou">
+            <img src={javascript} className="couimg" />
+            <p className="couname">JavaScript</p>
+          </div>
 
-            <div className="cou">
-              <img src={linux} className="couimg" />
-              <p className="couname">Linux</p>
-            </div>
+          <div className="cou">
+            <img src={linux} className="couimg" />
+            <p className="couname">Linux</p>
+          </div>
 
-            <div className="cou">
-              <img src={PT} className="couimg" />
-              <p className="couname">Penetration Testing</p>
-            </div>
+          <div className="cou">
+            <img src={PT} className="couimg" />
+            <p className="couname">Penetration Testing</p>
+          </div>
 
-            <div className="cou">
-              <img src={MOS} className="couimg" />
-              <p className="couname">Dealing with Microsoft Office</p>
-            </div>
+          <div className="cou">
+            <img src={MOS} className="couimg" />
+            <p className="couname">Dealing with Microsoft Office</p>
+          </div>
 
-            <div className="cou">
-              <img src={software} className="couimg" />
-              <p className="couname">Software Engineers</p>
-            </div>
+          <div className="cou">
+            <img src={software} className="couimg" />
+            <p className="couname">Software Engineers</p>
+          </div>
 
-            <div className="cou">
-              <img src={soft1} className="couimg" />
-              <p className="couname">Leadership, Problem solving</p>
-            </div>
+          <div className="cou">
+            <img src={soft1} className="couimg" />
+            <p className="couname">Leadership, Problem solving</p>
+          </div>
 
-            <div className="cou">
-              <img src={soft2} className="couimg" />
-              <p className="couname">Hard working, and Fast learning</p>
-            </div>
+          <div className="cou">
+            <img src={soft2} className="couimg" />
+            <p className="couname">Hard working, and Fast learning</p>
+          </div>
 
-            
-          </Carousel>
-        </div>
+
+        </Carousel>
+      </div>
 
 
       <h1 className={`Title`}>Languages</h1>

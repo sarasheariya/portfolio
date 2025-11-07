@@ -609,7 +609,6 @@
     margin-top: 2%;
     padding: 10px;
     border-radius: 15px;
-    background-color: #060E0D;
     color: #ffffff;
     font-family: Karma;
     font-size: 20px;
@@ -632,26 +631,18 @@
   }
 
 
-
-  .cousquare {
-    font-size: 20px;
-    letter-spacing: 2px;
-    line-height: 1.5;
+.cou {
+    min-width: 200px;
+    padding: 12px;
+    font-size: 18px;
   }
 
-  .cou{
-    font-size: 20px;
-    letter-spacing: 2px;
-    text-align: center;
+  .couimg {
+    height: 80px;
   }
 
-  .couimg{
-    height: 70px;
-  }
-
-  .couname{
-    color: #ffffff;
-    font-size: 13px;
+  .arrow {
+    font-size: 24px;
   }
 
 
@@ -665,8 +656,6 @@
   }
 
 }
-
-
 
 
 
@@ -797,22 +786,18 @@
 
 
 
-  .cousquare {
-    font-size: 15px;
+  .cou {
+    min-width: 180px;
+    padding: 10px;
+    font-size: 16px;
   }
 
-  .cou{
-    font-size: 15px;
-    letter-spacing: 2px;
-    text-align: center;
+  .couimg {
+    height: 70px;
   }
 
-  .couimg{
-    height: 60px;
-  }
-
-  .couname{
-    font-size: 15px;
+  .arrow {
+    font-size: 22px;
   }
 
 
@@ -957,22 +942,19 @@
 
 
 
-  .cousquare {
-    font-size: 15px;
+  .cou {
+    min-width: 160px;
+    padding: 8px;
+    font-size: 14px;
+    letter-spacing: 1px;
   }
 
-  .cou{
-    font-size: 15px;
-    letter-spacing: 2px;
-    text-align: center;
-  }
-
-  .couimg{
+  .couimg {
     height: 60px;
   }
 
-  .couname{
-    font-size: 15px;
+  .arrow {
+    font-size: 20px;
   }
 
 

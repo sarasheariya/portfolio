@@ -3,17 +3,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #060E0D;
+    background: #fffdf9;
     color: #FFF8F9;
     padding: 15px 5%;
     transition: 0.3s;
     position: fixed;
+    /* z-index: 9999; */
 }
 
 
 .logo{
     font-size: 40px;
-    color: #637d64;
+    color: #355135;
     filter: drop-shadow(0px 2px 3px #ffffff52);
     transition: 0.3s;
 }

@@ -1,7 +1,7 @@
 // import React from 'react'
 
 // import { useState } from "react";
-import Navbar from "./Components/Navbar/Navbar";
+// import Navbar from "./Components/Navbar/Navbar";
 import About from "./Body/About/About";
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <div className={`Container`}>
-      <Navbar/>
+      {/* <Navbar/> */}
       <About />
     </div>
   );

@@ -1,5 +1,5 @@
 .body{
-  background: #060E0D;
+  background: #fffdf9;
   height: 100%;
   transition: 0.3s;
   min-height: 100%;
@@ -37,7 +37,7 @@
     font-family: Karma;
     font-weight: normal;
     font-size: 30px;
-    color: #637d64;
+    color: #355135;
 }
 
 
@@ -49,7 +49,7 @@
     padding-right: 150px;
     padding-left: 150px;
     border-radius: 15px;
-    background-color: #060E0D;
+    /* background-color: #060E0D; */
     color: #ffffff;
     font-family: Karma;
     font-size: 60px;
@@ -70,13 +70,13 @@
 
   @keyframes glowAnimation {
   0% {
-    box-shadow: 0 0 5px #c7d0c7;
+    box-shadow: 0 0 5px #383b38;
   }
   70% {
-    box-shadow: 0 0 20px #69be69;
+    box-shadow: 0 0 20px #254225;
   }
   100% {
-    box-shadow: 0 0 5px #c7d0c7;
+    box-shadow: 0 0 5px #383b38;
   }
 }
 
@@ -89,6 +89,7 @@
 
   .typing1{
     font-size: 40px;
+    color: #060e08;
     white-space: nowrap;
     overflow: hidden;
     width: 14ch;
@@ -97,9 +98,10 @@
 
   .typing2 {
     font-size: 40px;
+    color: #060e08;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 1px solid #ffffff3c;
+    border-right: 1px solid #0000003c;
     width: 19ch;
     animation: typing2 2.5s steps(19) forwards, blink 0.7s step-end infinite;
 }
@@ -135,17 +137,20 @@
     margin-top: 2%;
     padding: 10px;
     border-radius: 15px;
-    background-color: #060E0D;
+    background-color: #637d64;
     color: #ffffff;
     font-family: Karma;
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 1.5;
-    box-shadow: 
-    0 -5px 3px rgba(105, 190, 105, 0.183),
-    1px 0 4px rgba(199, 208, 199, 0.005),
-    -1px 0 4px rgba(199, 208, 199, 0.005);
+    box-shadow: 0 0 5px rgba(11, 20, 11, 0.614);
   }
+
+  .contactsquare a:hover svg {
+    opacity: 0.15;
+    transition: .2s ease;
+}
+
 
 
   .contacttable{
@@ -165,14 +170,11 @@
     margin-top: 2%;
     padding: 10px;
     border-radius: 15px;
-    background-color: #060E0D;
+    background-color: #637d64;
     letter-spacing: 2px;
     line-height: 1.5;
     text-align: center;
-    box-shadow: 
-    0 -5px 3px rgba(105, 190, 105, 0.183),
-    1px 0 4px rgba(199, 208, 199, 0.005),
-    -1px 0 4px rgba(199, 208, 199, 0.005);
+    box-shadow: 0 0 5px rgba(11, 20, 11, 0.614);
   }
 
   .CV{
@@ -189,8 +191,8 @@
     margin-top: 1%;
     padding: 10px;
     border-radius: 15px;
-    background-color: #060E0D;
-    color: #ffffff;
+    /* background-color: #060E0D; */
+    color: #060e08;
     font-family: Karma;
     font-size: 20px;
     letter-spacing: 2px;
@@ -199,13 +201,13 @@
 
 
 
-.Skillsquare {
+  .Skillsquare {
     width: 90%;
     margin-left: 5%;
     margin-top: 2%;
     padding: 10px;
     border-radius: 15px;
-    background-color: #060E0D;
+    /* background-color: #060E0D; */
     color: #ffffff;
     font-family: Karma;
     font-size: 20px;
@@ -244,76 +246,75 @@
   .row::after {
     display: table;
     margin-bottom: 5%;
-}
-  
-.column {
-    /* flex: 50%; */
-    width: 100%;
-    padding-right: 5%;
-    padding-left: 0%;
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+  }
+    
+  .column {
+      /* flex: 50%; */
+      width: 100%;
+      padding-right: 5%;
+      padding-left: 0%;
+      font-size: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
 
-.edu{
-    width: 100%;
-    /* float: right; */
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: #cf1616; */
-}
+  .edu{
+      width: 100%;
+      /* float: right; */
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
 
-.edu2{
-    width: 70%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2%;
-    padding: 10px;
+  .edu2{
+      width: 70%;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 2%;
+      padding: 10px 5px 10px 5px;
+      border-radius: 15px;
+      background-color: #637d64;
+      color: #ffffff;
+      font-family: Karma;
+      font-size: 20px;
+      letter-spacing: 2px;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      line-height: 1.5;
+      box-shadow: 0 0 5px rgba(11, 20, 11, 0.614);
+  }
+
+  .eduimg{
+    height: auto;
+    /* margin: 15%; */
     border-radius: 15px;
-    background-color: #060E0D;
-    color: #ffffff;
-    font-family: Karma;
-    font-size: 20px;
-    letter-spacing: 2px;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    line-height: 1.5;
-    box-shadow: 
-    0 -5px 3px rgba(105, 190, 105, 0.183),
-    1px 0 4px rgba(199, 208, 199, 0.005),
-    -1px 0 4px rgba(199, 208, 199, 0.005);
-}
+    /* box-shadow: 0 0 5px rgba(11, 20, 11, 0.614); */
+  }
 
-.eduimg{
-  height: auto;
-  /* margin: 15%; */
-  border-radius: 15px;
-  /* box-shadow: 
-    0 -5px 3px rgba(105, 190, 105, 0.183),
-    1px 0 4px rgba(199, 208, 199, 0.005),
-    -1px 0 4px rgba(199, 208, 199, 0.005); */
-}
+  .eduname{
+      font-family: Karma;
+      font-size: 15px;
+      padding-top: 15%;
+      padding-left: 5%;
+      color: #ffffff;
+  }
 
-.eduname{
-    font-family: Karma;
-    font-size: 15px;
-    padding-top: 15%;
-    padding-left: 5%;
-}
+  .greensquare{
+    background-color: #cdcfcd56;
+    padding: 0 0 1% 0;
+  }
 
 
-.expsquare {
+  .exp square {
     width: 90%;
     margin-left: 5%;
     margin-top: 2%;
     padding: 10px;
     border-radius: 15px;
-    background-color: #060E0D;
+    /* background-color: #060E0D; */
     color: #ffffff;
     font-family: Karma;
     font-size: 20px;
@@ -327,17 +328,14 @@
     margin-top: 2%;
     padding: 10px;
     border-radius: 15px;
-    background-color: #060E0D;
+    background-color: #637d64;
     color: #ffffff;
     font-family: Karma;
     font-size: 20px;
     letter-spacing: 2px;
     text-align: center;
     line-height: 1.5;
-    box-shadow: 
-    0 -5px 3px rgba(105, 190, 105, 0.183),
-    1px 0 4px rgba(199, 208, 199, 0.005),
-    -1px 0 4px rgba(199, 208, 199, 0.005);
+    box-shadow: 0 0 5px rgba(11, 20, 11, 0.614);
   }
 
   .expimg{
@@ -355,33 +353,17 @@
     width: 90%;
     margin-left: 5%;
     margin-top: 2%;
-    padding: 10px;
+    padding: 15px;
     border-radius: 15px;
-    background-color: #060E0D;
+    /* background-color: #060E0D; */
     color: #ffffff;
     font-family: Karma;
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 1.5;
-  }
-
-  .cou{
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 2%;
-    padding: 10px;
-    border-radius: 15px;
-    background-color: #060E0D;
-    color: #ffffff;
-    font-family: Karma;
-    font-size: 20px;
-    letter-spacing: 2px;
+    position: relative; /* مهم جداً */
+    overflow: hidden; /* يمنع الكروت تطلع فوق */
     text-align: center;
-    line-height: 1.5;
-    box-shadow: 
-    0 -5px 3px rgba(105, 190, 105, 0.183),
-    1px 0 4px rgba(199, 208, 199, 0.005),
-    -1px 0 4px rgba(199, 208, 199, 0.005);
   }
 
   .couimg{
@@ -393,6 +375,59 @@
     font-size: 13px;
   }
 
+  .coursesScroll {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 28px;
+    color: #355135;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .arrow.left {
+    left: 5px;
+  }
+
+  .arrow.right {
+    right: 5px;
+  }
+
+  .cou {
+    min-width: 240px;
+    width: 90%;
+    margin: 2% 0 2% 0;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #637d64;
+    color: #ffffff;
+    font-family: Karma;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1.5;
+    box-shadow: 0 0 5px rgba(11, 20, 11, 0.614);
+    text-align: center;
+  }
+
+  .slick-slide {
+    padding: 0 15px; 
+  }
+
+  .slick-list {
+  margin: 0 -10px;
+  }
+
+
+
 
 
   .languagessquare{
@@ -402,7 +437,7 @@
     margin-top: 2%;
     padding: 10px;
     border-radius: 15px;
-    background-color: #060E0D;
+    background-color: #637d64;
     color: #ffffff;
     font-family: Karma;
     font-size: 20px;
@@ -411,10 +446,8 @@
     flex-direction: column;
     text-align: center;
     line-height: 1.5;
-    box-shadow: 
-    0 -5px 3px rgba(105, 190, 105, 0.183),
-    1px 0 4px rgba(199, 208, 199, 0.005),
-    -1px 0 4px rgba(199, 208, 199, 0.005);
+    box-shadow: 0 0 5px rgba(11, 20, 11, 0.614);
+
   }
 
   .STEP{
@@ -449,7 +482,7 @@
     bottom: 0px;
     padding: 50px;
     margin-top: 5%;
-    background: #060E0D;
+    background: #637d64;
     color: #FFF8F9;
     transition: 0.3s;
   }

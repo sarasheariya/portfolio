@@ -1,9 +1,5 @@
 // import React from 'react'
 import "./About.css";
-import x_dark from "../../assets/xdark.png";
-import phone_dark from "../../assets/phonedark.png";
-import email_dark from "../../assets/emaildark.png";
-import linkedin_dark from "../../assets/linkedindark.png";
 import SaraLogo from "../../assets/SaraLogo.png";
 import java from "../../assets/java.png";
 import c from "../../assets/c.png";
@@ -24,8 +20,31 @@ import bugbounty from "../../assets/bugbounty.svg";
 import cisco from "../../assets/Cisco.png";
 import gdsc from "../../assets/GDSC.png";
 import udemy from "../../assets/udemy.png";
+import { PhoneFilled, MailFilled, TwitterOutlined, LinkedinOutlined, LeftOutlined, RightOutlined } from "@ant-design/icons";
+import { Carousel } from "antd";
+import type { CarouselRef } from "antd/es/carousel";
+import { useRef } from "react";
+
+
 
 const About = () => {
+
+  const sliderRef = useRef<CarouselRef>(null);
+
+  const next = () => {
+    if (!sliderRef.current) return;
+    sliderRef.current.next();
+  };
+
+  const prev = () => {
+    if (!sliderRef.current) return;
+    sliderRef.current.prev();
+  };
+
+
+
+
+
   return (
     <div className={`body`}>
       <div className={`sara`}>
@@ -56,31 +75,32 @@ const About = () => {
               <tr>
                 <th>
                   <a href="tel:+966506220509">
-                    <img src={phone_dark} alt="" />
+                    <PhoneFilled style={{ fontSize: "22px", color: "white" }} />
                   </a>
                 </th>
                 <th>
                   <a href="mailto:sheariyasara@gmail.com">
-                    <img src={email_dark} alt="" />
+                    <MailFilled style={{ fontSize: "22px", color: "white" }} />
                   </a>
                 </th>
                 <th>
                   <a href="https://x.com/sarasheariya/" target="_blank">
-                    <img src={x_dark} alt="" />
+                    <TwitterOutlined style={{ fontSize: "22px", color: "white" }} />
                   </a>
                 </th>
                 <th>
                   <a
-                    href="https://www.linkedin.com/in/sara-sheariya-623b39221?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    href="https://www.linkedin.com/in/sara-sheariya-623b39221"
                     target="_blank"
                   >
-                    <img src={linkedin_dark} alt="" />
+                    <LinkedinOutlined style={{ fontSize: "22px", color: "white" }} />
                   </a>
                 </th>
               </tr>
             </tbody>
           </table>
         </div>
+
       </div>
 
       <div className="custom-shape-divider-top-1753192864">
@@ -93,9 +113,8 @@ const About = () => {
           <defs>
             <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
               <stop offset="0%" stop-color="#637d64" />
-              <stop offset="0%" stop-color="#374638ff" />
-              <stop offset="50%" stop-color="#232c24ff" />
-              <stop offset="100%" stop-color="#060E0D" />
+              <stop offset="50%" stop-color="#3d4d3dff" />
+              <stop offset="100%" stop-color="#222c22ff" />
             </linearGradient>
           </defs>
           <path
@@ -129,44 +148,47 @@ const About = () => {
       </div>
 
       <h1 className={`Title`}>Experiences</h1>
-      <div className={`expsquare`}>
-        <div className="row">
-          <div className="column">
-            <div className="exp">
-              <p className="expname">
-                <br />
-                Cooperative Training
-              </p>
-              <img src={stc} className="expimg" />
-              <p className="expname">
-                Creating Database by ( Access ), developed a web application by
-                ( HTML | CSS | PHP ) and link it with the database in the cloud.
-              </p>
-            </div>
-            <div className="exp">
-              <p className="expname">
-                <br />
-                Front-End Developer
-              </p>
-              <img src={efhamni} className="expimg" />
-              <p className="expname">
-                Developed an application by Flutter ( DART language ) for
-                autistic children to help them to communicate with other.
-              </p>
-            </div>
-            <div className="exp">
-              <p className="expname">
-                Freelancer, Penetration Testing
-              </p>
-              <img src={bugbounty} className="expimg" />
-              <p className="expname">
-                Junior Penetration Tester — Performed basic vulnerability discovery and responsible
-                disclosure on bug-bounty platforms.
-              </p>
+      <div className="greensquare">
+        <div className={`expsquare`}>
+          <div className="row">
+            <div className="column">
+              <div className="exp">
+                <p className="expname">
+                  <br />
+                  Cooperative Training
+                </p>
+                <img src={stc} className="expimg" />
+                <p className="expname">
+                  Creating Database by ( Access ), developed a web application by
+                  ( HTML | CSS | PHP ) and link it with the database in the cloud.
+                </p>
+              </div>
+              <div className="exp">
+                <p className="expname">
+                  <br />
+                  Front-End Developer
+                </p>
+                <img src={efhamni} className="expimg" />
+                <p className="expname">
+                  Developed an application by Flutter ( DART language ) for
+                  autistic children to help them to communicate with other.
+                </p>
+              </div>
+              <div className="exp">
+                <p className="expname">
+                  Freelancer, Penetration Testing
+                </p>
+                <img src={bugbounty} className="expimg" />
+                <p className="expname">
+                  Junior Penetration Tester — Performed basic vulnerability discovery and responsible
+                  disclosure on bug-bounty platforms.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
 
       <h1 className={`Title`}>Education</h1>
       <div className={`edu`}>
@@ -183,108 +205,122 @@ const About = () => {
       </div>
 
       <h1 className={`Title`}>Courses</h1>
-      <div className={`cousquare`}>
-        <div className="row">
-          <div className="column">
-            <div className="exp">
+      <div className="greensquare">
+        <div className="cousquare" style={{ position: "relative" }}>
+          <LeftOutlined className="arrow left" onClick={prev} />
+          <RightOutlined className="arrow right" onClick={next} />
+
+          <Carousel ref={sliderRef} dots={false} slidesToShow={3} slidesToScroll={1}>
+            <div className="cou">
               <p className="couname">Network Support and Security</p>
               <img src={cisco} className="couimg" />
               <p className="couname">CISCO Networking Academy</p>
             </div>
-            <div className="exp">
+
+            <div className="cou">
               <p className="couname">Networking Basics</p>
               <img src={cisco} className="couimg" />
               <p className="couname">CISCO Networking Academy</p>
             </div>
-          </div>
-          <div className="column">
-            <div className="exp">
+
+            <div className="cou">
               <p className="couname">AI Bootcamp</p>
               <img src={gdsc} className="couimg" />
               <p className="couname">GOOGLE DEVELOPER STUDENT CLUB</p>
             </div>
-            <div className="exp">
+
+            <div className="cou">
               <p className="couname">Introduction to Cybersecurity</p>
               <img src={cisco} className="couimg" />
               <p className="couname">CISCO Networking Academy</p>
             </div>
-          </div>
-          <div className="column">
-            <div className="exp">
+
+            <div className="cou">
               <p className="couname">Learn ethical hacking from scratch</p>
               <img src={udemy} className="couimg" />
               <p className="couname">Udemy</p>
             </div>
-            <div className="exp">
+
+            <div className="cou">
               <p className="couname">Cyber security bootcamp</p>
               <img src={gdsc} className="couimg" />
               <p className="couname">GOOGLE DEVELOPER STUDENT CLUB</p>
             </div>
-          </div>
+          </Carousel>
         </div>
       </div>
 
+
       <h1 className={`Title`}>Skills</h1>
-      <div className={`Skillsquare`}>
-        <div className="row">
-          <div className="column">
-            <div className="skills">
-              <img src={java} className="skillimg" />
-              <p className="skillname">Java</p>
+      <div className="cousquare" style={{ position: "relative" }}>
+          <LeftOutlined className="arrow left" onClick={prev} />
+          <RightOutlined className="arrow right" onClick={next} />
+
+          <Carousel ref={sliderRef} dots={false} slidesToShow={3} slidesToScroll={1}>
+            <div className="cou">
+              <img src={java} className="couimg" />
+              <p className="couname">Java</p>
             </div>
-            <div className="skills">
-              <img src={c} className="skillimg" />
-              <p className="skillname">C++</p>
+
+            <div className="cou">
+              <img src={c} className="couimg" />
+              <p className="couname">C++</p>
             </div>
-            <div className="skills">
-              <img src={python} className="skillimg" />
-              <p className="skillname">Python</p>
+
+            <div className="cou">
+              <img src={python} className="couimg" />
+              <p className="couname">Python</p>
             </div>
-          </div>
-          <div className="column">
-            <div className="skills">
-              <img src={htmlcss} className="skillimg" />
-              <p className="skillname">HTML, Css</p>
+
+            <div className="cou">
+              <img src={htmlcss} className="couimg" />
+              <p className="couname">HTML, Css</p>
             </div>
-            <div className="skills">
-              <img src={dart} className="skillimg" />
-              <p className="skillname">Dart</p>
+
+            <div className="cou">
+              <img src={dart} className="couimg" />
+              <p className="couname">Dart</p>
             </div>
-            <div className="skills">
-              <img src={javascript} className="skillimg" />
-              <p className="skillname">JavaScript</p>
+
+            <div className="cou">
+              <img src={javascript} className="couimg" />
+              <p className="couname">JavaScript</p>
             </div>
-          </div>
-          <div className="column">
-            <div className="skills">
-              <img src={linux} className="skillimg" />
-              <p className="skillname">Linux</p>
+
+            <div className="cou">
+              <img src={linux} className="couimg" />
+              <p className="couname">Linux</p>
             </div>
-            <div className="skills">
-              <img src={PT} className="skillimg" />
-              <p className="skillname">Penetration Testing</p>
+
+            <div className="cou">
+              <img src={PT} className="couimg" />
+              <p className="couname">Penetration Testing</p>
             </div>
-            <div className="skills">
-              <img src={MOS} className="skillimg" />
-              <p className="skillname">Dealing with Microsoft Office</p>
+
+            <div className="cou">
+              <img src={MOS} className="couimg" />
+              <p className="couname">Dealing with Microsoft Office</p>
             </div>
-          </div>
-          <div className="column">
-            <div className="skills">
-              <img src={software} className="skillimg" />
-              <p className="skillname">Software Engineers</p>
+
+            <div className="cou">
+              <img src={software} className="couimg" />
+              <p className="couname">Software Engineers</p>
             </div>
-            <div className="skills">
-              <img src={soft1} className="skillimg" />
-              <p className="skillname">Leadership, Problem solving </p>
+
+            <div className="cou">
+              <img src={soft1} className="couimg" />
+              <p className="couname">Leadership, Problem solving</p>
             </div>
-            <div className="skills">
-              <img src={soft2} className="skillimg" />
-              <p className="skillname"> Hard working, and Fast learning</p>
+
+            <div className="cou">
+              <img src={soft2} className="couimg" />
+              <p className="couname">Hard working, and Fast learning</p>
             </div>
-          </div>
+
+            
+          </Carousel>
         </div>
-      </div>
+
 
       <h1 className={`Title`}>Languages</h1>
       <div className={`edu`}>

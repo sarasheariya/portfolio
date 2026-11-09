@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* 🥑 الألوان كلها هنا: غيّريها من مكان واحد */
+@theme {
+  --color-cream: #f4ecd8;
+  --color-sand: #e6d8b8;
+  --color-latte: #c19a6b;
+  --color-bark: #7a5636;
+  --color-espresso: #33241a;
+  --color-lime: #b9d07c;
+  --color-avo: #7d9b3a;
+  --color-moss: #3b5520;
+  --font-display: 'Bricolage Grotesque', 'Reem Kufi', sans-serif;
+  --font-sans: 'Cairo', system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--color-cream); color: var(--color-espresso); font-family: var(--font-sans); }
+:focus-visible { outline: 3px solid var(--color-avo); outline-offset: 3px; }
+
+@keyframes marquee { to { transform: translateX(-50%); } }
+.marquee { animation: marquee 35s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .marquee { animation: none; } html { scroll-behavior: auto; } }

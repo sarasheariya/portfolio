@@ -1,0 +1,46 @@
+{
+  "nav": { 
+    "about": "About", 
+    "experience": "Experience", 
+    "projects": "Projects", 
+    "education": "Education", 
+    "courses": "Courses", 
+    "skills": "Skills", 
+    "languages": "Languages", 
+    "contact": "Contact" 
+  },
+  "hero": { 
+    "hi": "Hi, I'm", 
+    "name": "Sara Sheariya", 
+    "role": "Software Engineer", 
+    "tagline": "I build responsive, user-focused web interfaces with React, TypeScript, and Tailwind.", 
+    "cta1": "See my projects", 
+    "cta2": "Get in touch" 
+  },
+  "about": {
+    "text": "Computer Science graduate with hands-on experience building web applications and responsive interfaces. I've worked on production platforms with React, TypeScript, Django, and Docker alongside backend and design teams, with a solid foundation in networking and cybersecurity.",
+    "stats": [{ "v": "3.85", "l": "GPA out of 4" }, { "v": "2", "l": "platforms contributed to" }, { "v": "3", "l": "languages spoken" }]
+  },
+  "experience": {
+    "extra": "Additional experience",
+    "items": [
+      { "role": "Front-End Developer", "period": "Oct 2025 – Present", "points": ["Develop responsive, reusable web interfaces with React.js, TypeScript, and Tailwind CSS.", "Collaborate with backend and design teams to integrate APIs and deliver end-to-end features.", "Work with Git/GitLab and Docker in collaborative development and deployment environments."] },
+      { "role": "Hajj Camps Supervisor", "period": "Hajj Season 2026", "points": ["Supervised 22 camps and a cleaning team, ensuring readiness and hygiene throughout the season.", "Managed linen replacement and followed up on AC maintenance under high-pressure, time-sensitive conditions."] },
+      { "role": "Cooperative Training", "period": "Jul 2023 – Aug 2023", "points": ["Built a database-driven web application with HTML, CSS, PHP, and Microsoft Access.", "Designed database functionality and connected the application to the database."] }
+    ]
+  },
+  "projects": {
+    "items": [
+      { "type": "Task & Team Management Platform", "desc": "A collaborative platform for organizing projects, teams, and workflows, with task tracking and Kanban boards.", "role": "Led the entire project team across Frontend, Backend, and UI/UX, coordinating workflows and ensuring seamless collaboration and alignment between all teams throughout development." },
+      { "type": "Survey Performance Management Platform", "desc": "A web platform for managing survey performance, institutions, packages, subscriptions, and users.", "role": "Built dashboards and role-based interfaces, with Google OAuth and Django REST API integration." }
+    ]
+  },
+  "education": { "degree": "Bachelor's in Computer Science", "school": "Umm Al Qura University", "period": "2020 – 2024", "gpa": "GPA 3.85 / 4" },
+  "skills": {
+    "groups": { "frontend": "Frontend", "backend": "Backend & Databases", "tools": "Tools", "soft": "Management & Coordination" },
+    "softItems": ["Team Supervision", "Planning & Coordination", "Task Prioritization", "Follow-up & Tracking", "Working Under Pressure"]
+  },
+  "languages": { "names": { "ar": "Arabic", "en": "English", "tr": "Turkish" }, "levels": { "ar": "Native", "en": "9 / 10", "tr": "5 / 10" } },
+  "contact": { "title": "Let's work together", "text": "Open to new opportunities and collaborations. Drop me a line." },
+  "ui": { "live": "Live demo", "code": "Code", "footer": "Built with React and a little avocado" }
+}
